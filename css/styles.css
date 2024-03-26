@@ -114,6 +114,18 @@ header nav a:hover {
 .header5 {
     background-image: url(../assets/img/fondo5.png);
 }
+.menuHamburguesa{
+    display: none;
+}
+ul{
+    display: none;
+}
+nav label{
+    display: none;
+}
+nav input{
+    display: none;
+}
 
 /* FLEXBOX **/ 
 .flex-nav{
@@ -235,6 +247,25 @@ header nav a:hover {
     }
 }
 @media (max-width:425px) {
+    nav .ul1 li {
+        display: none;
+    }
+    input:checked ~ ul{
+        display: block;
+    }
+    .ul{
+        display: none;
+        list-style: none;
+        flex-wrap: nowrap;
+        margin-right: 20px;
+        position: relative;
+        font-size: .75rem;
+    }
+    nav label {
+        display: block;
+        text-align: end;
+        margin-right: 20px;
+    }
     .flex-nav a  {
         font-size: .5625rem;
         justify-content: end;
@@ -311,10 +342,31 @@ header nav a:hover {
         background-image: url(../assets/img/fondocelu5.png);
         background-size: cover;
     }
-}
+    }
 @media (max-width:375px){
+    nav .ul1 li {
+        display: none;
+    }
+    input:checked ~ ul{
+        display: block;
+    }
+    .ul{
+        display: none;
+        list-style: none;
+        flex-wrap: nowrap;
+        margin-right: 20px;
+        position: relative;
+        font-size: .75rem;
+    }
+    nav label {
+        display: block;
+    }
+    .menuHamburguesa {
+        text-align: end;
+        margin-right: 20px;
+    }
     .portada2{
-        margin: 153px 10px 10px 90px; ;
+        margin: 100px 10px 10px 90px; ;
     }
     .portada3{
         margin: 153px 10px 10px 90px;
@@ -324,11 +376,32 @@ header nav a:hover {
     }
 }
 @media (max-width: 320px){
+    nav .ul1 li {
+        display: none;
+    }
+    input:checked ~ ul{
+        display: block;
+    }
+    .ul{
+        display: none;
+        list-style: none;
+        flex-wrap: nowrap;
+        margin-right: 20px;
+        position: relative;
+        font-size: .75rem;
+    }
+    nav label {
+        display: block;
+    }
+    .menuHamburguesa {
+        text-align: end;
+        margin-right: 20px;
+    }
     .portada{
         margin-top: 250px; 
     }
     .portada2{
-        margin-top: 550px;
+        margin-top: 400px;
         margin-left: 150px;
     }
     .portada3{
@@ -336,6 +409,6 @@ header nav a:hover {
         margin-left: 55px;
     }
     .portada5{
-        margin-top: 550px;
+        margin-top: 400px;
     }
 }
