@@ -23,7 +23,7 @@ box-sizing: border-box;
 }
 .portada2 {
     color: #D9D9D9;
-    font-family: "Josefin Sans, sans-serif";
+    font-family: "Josefin Sans", sans-serif;
     font-size: 35px;
     margin: 153px 10px 10px 239px;
 }
@@ -86,6 +86,9 @@ header{
 }
 header nav {
     font-size: 16px;
+}
+header nav a:hover {
+    color: white;
 }
 .header2 {
     background-image: url(../assets/img/fondo2.png);
