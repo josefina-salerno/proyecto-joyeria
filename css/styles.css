@@ -9,7 +9,7 @@ padding: 0%;
 box-sizing: border-box;
 }
 
-/* FUENTES **/
+/* FUENTES / ESTILOS **/
 .josefinDark {
     color: #776B5D;
     font-family:"Josefin Sans", sans-serif;
@@ -114,6 +114,8 @@ header nav a:hover {
 .header5 {
     background-image: url(../assets/img/fondo5.png);
 }
+
+/*MENU HAMBURGUESA**/
 .menuHamburguesa{
     display: none;
 }
