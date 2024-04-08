@@ -249,6 +249,14 @@ nav input{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row iframe{
+        width: 280px;
+        height: 150px;
+    }
 }
 @media (max-width:425px) {
     nav .ul1 li {
@@ -345,6 +353,14 @@ nav input{
     .header5 {
         background-image: url(../assets/img/fondocelu5.png);
         background-size: cover;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .row iframe{
+        width: 280px;
+        height: 150px;
     }
     }
 @media (max-width:375px){
