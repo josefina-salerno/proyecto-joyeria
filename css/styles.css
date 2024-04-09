@@ -19,30 +19,35 @@ box-sizing: border-box;
     color: #776B5D;
     font-family:"Josefin Sans", sans-serif;
     font-size: 35px;
+    position: absolute;
     margin: 153px 10px 10px 239px;
 }
 .portada2 {
     color: #D9D9D9;
     font-family: "Josefin Sans", sans-serif;
     font-size: 35px;
+    position: absolute;
     margin: 153px 10px 10px 239px;
 }
 .portada3 {
     color: #D9D9D9;
     font-family:"Josefin Sans", sans-serif;
     font-size: 35px;
+    position: absolute;
     margin: 153px 10px 10px 239px;
 }
 .portada4{
     color: #776B5D;
     font-family:"Josefin Sans", sans-serif;
     font-size: 35px;
+    position: absolute;
     margin: 153px 10px 10px 239px;
 }
 .portada5 {
     color: #776B5D;
     font-family:"Josefin Sans", sans-serif;
     font-size: 35px;
+    position: absolute;
     margin: 153px 10px 10px 239px;
 }
 .auroreDark {
@@ -116,17 +121,24 @@ header nav a:hover {
 }
 
 /*MENU HAMBURGUESA**/
-.menuHamburguesa{
-    display: none;
+.navbar {
+    background-color: transparent !important; /* Hacer el fondo transparente */
 }
-ul{
-    display: none;
+.container-fluid ul .nav-item  {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
 }
-nav label{
-    display: none;
+
+.navbar-nav .nav-link {
+    color: #fff; /* Cambiar el color de las letras a blanco */
 }
-nav input{
-    display: none;
+header .menu .menu-ul{
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* FLEXBOX **/ 
@@ -220,7 +232,7 @@ nav input{
     }
     .portada3 {
         color: #776B5D;
-        margin: 500px 10px 10px 90px;
+        margin: 440px 10px 10px 90px;
         font-family: "Josefin Sans", sans-serif;
     }
     .portada4{
@@ -259,25 +271,7 @@ nav input{
     }
 }
 @media (max-width:425px) {
-    nav .ul1 li {
-        display: none;
-    }
-    input:checked ~ ul{
-        display: block;
-    }
-    .ul{
-        display: none;
-        list-style: none;
-        flex-wrap: nowrap;
-        margin-right: 20px;
-        position: relative;
-        font-size: .75rem;
-    }
-    nav label {
-        display: block;
-        text-align: end;
-        margin-right: 20px;
-    }
+
     .flex-nav a  {
         font-size: .5625rem;
         justify-content: end;
@@ -396,27 +390,7 @@ nav input{
     }
 }
 @media (max-width: 320px){
-    nav .ul1 li {
-        display: none;
-    }
-    input:checked ~ ul{
-        display: block;
-    }
-    .ul{
-        display: none;
-        list-style: none;
-        flex-wrap: nowrap;
-        margin-right: 20px;
-        position: relative;
-        font-size: .75rem;
-    }
-    nav label {
-        display: block;
-    }
-    .menuHamburguesa {
-        text-align: end;
-        margin-right: 20px;
-    }
+
     .portada{
         margin-top: 250px; 
     }
@@ -425,7 +399,7 @@ nav input{
         margin-left: 150px;
     }
     .portada3{
-        margin-top: 580px;
+        margin-top: 440px;
         margin-left: 55px;
     }
     .portada5{
