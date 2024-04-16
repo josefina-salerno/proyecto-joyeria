@@ -1,0 +1,86 @@
+@media(max-width:425px){
+    .header1{
+        background-image: url(../assets/img/fondocelu.png);
+        h1{
+            margin-left: 60px;
+        }
+    }
+    .header2{
+        background-image: url(../assets/img/fondocelu2.png);
+    }
+    .header3{
+        background-image: url(../assets/img/fondocelu3.png);
+        h1{
+            margin-top: 100px;
+        }
+    }
+    .header5{
+        background-image: url(../assets/img/fondocelu5.png);
+        h1{
+            color: #D9D9D9;
+            margin-top: 300px;
+            margin-left: 60px;
+        }
+        nav a {
+            color: #D9D9D9;
+        }
+    }
+    .main1{
+        .div2{
+            display: flex;
+            img{
+                width: 350px;
+                height: 650px;
+            }
+        }
+    }
+    .main2{
+        a{
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            div{
+                @include grid2 (1, 1, 0px 20px 10px 20px);
+            }
+        }
+    }
+    .main3{
+        .grid3{
+            @include grid3 (50%, 1, 3, 20px, wrap);
+            img{
+                width: 400px;
+            }
+        }
+    }
+    .main4{
+        section{
+            .row{
+                display: flex;
+                flex-direction: column;
+                align-items:baseline;
+            }
+        }
+    }
+    .main5{
+        .grid3{
+            @include grid3 (50%, 1, 3, 20px, wrap);
+        }
+    }
+    footer{
+        section{
+            div{
+                img{
+                    margin: 20px;
+                    height: 60px;
+                }
+            }
+            .flex-footer{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

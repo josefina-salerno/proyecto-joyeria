@@ -12,7 +12,7 @@
         margin: map-get($Fuente2Oscura, margin );
     }
     .grid3 {
-            @include grid3 (50%, 2, 3, 20px);
+            @include grid3 (50%, 2, 3, 20px,wrap);
     }
     p{
         margin-top: 20px;

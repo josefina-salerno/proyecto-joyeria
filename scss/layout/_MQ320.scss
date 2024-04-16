@@ -1,0 +1,47 @@
+@media(max-width:320px){
+    .header2{
+        h1{
+            margin-left: 40px;
+        }
+    }
+    .main2{
+        div{
+            article{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .main3{
+        .grid3{
+            img{
+                width: 280px;
+            }
+        }
+    }
+    .main5{
+        .grid3{
+            img{
+                width: 280px;
+            }
+        }
+    }
+    footer{
+        section{
+            div{
+                width: 100%;
+                justify-content: center;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .flex-footer{
+                p{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}

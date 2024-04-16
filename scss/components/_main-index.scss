@@ -22,10 +22,11 @@
         }
     }
     .div2 {
-        @include grid (2, 2, 0px);
+        @include grid (1, 1, 0px, wrap);
             img {
                 width: 450px;
                 height: 600px;
+                margin-bottom: 20px;
                 }
             }
             div{

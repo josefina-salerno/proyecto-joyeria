@@ -1,0 +1,22 @@
+@media (max-width:1440px){
+    header{
+        nav{
+            a{
+                font-size: 12px;
+                justify-content: center;
+            }
+            .logo{
+                width: 35px;
+                height: 35px;
+                left: 30px;
+            }
+        }
+    }
+    .main1{
+        section{
+            div{
+                @include flex-img (row, wrap, space-around, 20px 30px 20px 20px);
+                }
+            }
+        }
+}

@@ -23,7 +23,7 @@
             margin: map-get($Fuente2Oscura , margin );
         }
         div{
-            @include grid2 (3, 2, 20px);
+            @include grid2 (3, 2, 0px 20px 10px 20px);
             article{
                 font-family: "Josefin Slab",serif;
                 color: map-get($FuentePrecios, color );

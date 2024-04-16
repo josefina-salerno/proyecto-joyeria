@@ -1,0 +1,74 @@
+@media(max-width:768px){
+    header{
+        nav{
+            .logo{
+                width: 50px;
+                height: 50px;
+                left: 30px;
+            }
+        }
+    }
+    .header3{
+        background-image: url(../assets/img/fondotablet3.png);
+    }
+    .header5{
+        background-image: url(../assets/img/fondotablet5.png);
+    }
+    .header2{
+        h1{
+            margin-left: 80px;
+        }
+    }
+    .header3{
+        nav a{
+            color: #776b5d;
+        }
+        h1{
+            margin-top: 450px;
+            margin-left: 130px;
+            color: #776b5d;
+        }
+    }
+    .header4{
+        h1{
+            margin-left: 100px;
+        }
+    }
+    .header5{
+        h1{
+            margin-left: 180px;
+        }
+    }
+    .main1{
+        .div2{
+            display: flex;
+            flex-direction: column;
+            div{
+                margin-left: 3px;
+            }
+        }
+    }
+    .main3{
+        .grid3{
+            img{
+                width: 350px;
+            }
+        }
+    }
+    .main4{
+        section{
+            .row{
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        }
+        }
+    .main5{
+        .grid3{
+            img{
+                width: 350px;
+            }
+        }
+    }
+}
+

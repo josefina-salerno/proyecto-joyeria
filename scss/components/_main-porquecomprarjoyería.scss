@@ -10,7 +10,7 @@
         margin: map-get($Fuente2Oscura, margin );
     }
     .grid3{
-        @include grid3 (50%, 2, 3, 20px);
+        @include grid3 (50%, 2, 3, 20px, wrap);
     }
     h2 {
         @extend h1 ;

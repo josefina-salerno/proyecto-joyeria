@@ -36,22 +36,24 @@
 @mixin flex-logo ($position){
     position: $position;
 }
-@mixin grid ($columns, $rows, $gap){
+@mixin grid ($columns, $rows, $gap, $wrap){
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: repeat($rows, 2fr);
     gap: $gap;
+    flex-wrap: $wrap;
 }
 @mixin grid2 ($columns, $row, $margin){
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     grid-template-rows: repeat($row, 1fr);
-    margin-left: $margin;
+    margin: $margin;
 }
-@mixin grid3 ($width, $columns, $rows, $bottom){
+@mixin grid3 ($width, $columns, $rows, $bottom, $wrap){
     display: grid;
     width: $width;
     grid-template-columns: repeat($columns,1fr);
     grid-template-rows: repeat($rows,1fr);
     bottom: $bottom;
+    flex-wrap: $wrap;
 }
