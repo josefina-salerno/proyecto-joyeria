@@ -1,25 +1,34 @@
-main{
+.main1 {
     section{
         font-family: "La Belle Aurore", cursive;
         color: map-get($FuenteClara , color );
         font-size: map-get($FuenteClara , font-size );
         margin: map-get($FuenteClara , margin );
         h2 {
+            text-align: left;
             font-family: "La belle Aurore", cursive;
             color: map-get($Fuente2Oscura , color);
             font-size: map-get($Fuente2Oscura , font-size );
             margin: map-get($Fuente2Oscura , margin );
         }
         div{
-            @include flex-img (row, wrap, space-around, 20px 30px 20px 20px);
+            @include flex-img (row, wrap, none, 20px 30px 20px 20px);
             div{
                 @include flex-texto (column, 35px);
             }
-        }
-    }
-    section{
-            .div2 {
-                @include flex-div (row, 20);
+            h3{
+                @include flex-ImgText (flex-end, center, space-around)
             }
         }
+    }
+    .div2 {
+        @include grid (2, 2, 0px);
+            img {
+                width: 450px;
+                height: 600px;
+                }
+            }
+            div{
+                grid-column: span 2;
+            }
 }

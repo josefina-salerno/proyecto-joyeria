@@ -1,14 +1,22 @@
-//Mixin
+/*Mixin*/
 @import "./utilities/mixins";
-//Maps
+/*Maps*/
 @import "./utilities/maps";
-//FUENTES
+/*FUENTES*/
 @import "./base/fuentes";
-//RESET
+/*RESET*/
 @import "./base/reset";
-//Header
+/*Barra de navegación*/
 @import "./components/navbar";
+/*Header*/
 @import "./components/header";
-
-//Main index
+/*Main index*/
 @import "./components/main-index";
+/*Main productos*/
+@import "./components/main-productos";
+/*Main inspiración*/
+@import "./components/main-inspiración";
+/*Main cuidados*/
+@import "./components/main-cuidados";
+/*Main ¿por qué comprar joyería?*/
+@import "./components/main-porquecomprarjoyería";

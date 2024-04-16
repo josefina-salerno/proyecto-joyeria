@@ -1,11 +1,17 @@
+@charset "UTF-8";
+/*Mixin*/
+/*Maps*/
+/*FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap");
+/*RESET*/
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
 
+/*Barra de navegación*/
 header .navbar {
   background-color: transparent !important;
   /* Hacer el fondo transparente */ }
@@ -35,12 +41,13 @@ header nav {
     width: 45px;
     height: 45px; }
 
+/*Header*/
 .header, .header2, .header3, .header4, .header5 {
   background-image: url(../assets/img/fondo.png);
   background-size: cover;
   height: 700px;
   width: 100%; }
-  .header h1, .header2 h1, .header3 h1, .header4 h1, .header5 h1 {
+  .header h1, .header2 h1, .header3 h1, .header4 h1, .header5 h1, .header .main4 h2, .main4 .header h2, .header2 .main4 h2, .main4 .header2 h2, .header3 .main4 h2, .main4 .header3 h2, .header4 .main4 h2, .main4 .header4 h2, .header5 .main4 h2, .main4 .header5 h2, .header .main5 h2, .main5 .header h2, .header2 .main5 h2, .main5 .header2 h2, .header3 .main5 h2, .main5 .header3 h2, .header4 .main5 h2, .main5 .header4 h2, .header5 .main5 h2, .main5 .header5 h2 {
     color: #776B5D;
     font-size: 35px;
     position: absolute;
@@ -53,14 +60,14 @@ header nav {
   background-image: url(../assets/img/fondo2.png); }
   .header2 a {
     color: #d9d9d9; }
-  .header2 h1 {
+  .header2 h1, .header2 .main4 h2, .main4 .header2 h2, .header2 .main5 h2, .main5 .header2 h2 {
     color: #d9d9d9; }
 
 .header3 {
   background-image: url(../assets/img/fondo3.png); }
   .header3 a {
     color: #d9d9d9; }
-  .header3 h1 {
+  .header3 h1, .header3 .main4 h2, .main4 .header3 h2, .header3 .main5 h2, .main5 .header3 h2 {
     color: #d9d9d9; }
 
 .header4 {
@@ -69,28 +76,135 @@ header nav {
 .header5 {
   background-image: url(../assets/img/fondo5.png); }
 
-main section {
+/*Main index*/
+.main1 section {
   font-family: "La Belle Aurore", cursive;
   color: #B0A695;
-  font-size: 20px;
+  font-size: 25px;
   margin: 30px 20px 30px 20px; }
-  main section h2 {
+  .main1 section h2 {
+    text-align: left;
     font-family: "La belle Aurore", cursive;
     color: #776B5D;
-    font-size: 35px;
+    font-size: 40px;
     margin: 30px 20px 30px 20px; }
-  main section div {
+  .main1 section div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: none;
     margin: 20px 30px 20px 20px; }
-    main section div div {
+    .main1 section div div {
       display: flex;
       flex-direction: column;
       margin-top: 35px; }
+    .main1 section div h3 {
+      display: flex;
+      align-self: flex-end;
+      text-align: center;
+      justify-content: space-around; }
 
-main section .div2 {
-  display: flex;
-  flex-direction: row;
-  gap: 20; }
+.main1 .div2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  gap: 0px; }
+  .main1 .div2 img {
+    width: 450px;
+    height: 600px; }
+
+.main1 div {
+  grid-column: span 2; }
+
+/*Main productos*/
+.main2 h1, .main2 .main4 h2, .main4 .main2 h2, .main2 .main5 h2, .main5 .main2 h2 {
+  font-family: "La Belle Aurore" , cursive;
+  color: #776B5D;
+  font-size: 40px;
+  margin: 30px 20px 30px 20px; }
+
+.main2 a {
+  font-family: "La Belle Aurore" , cursive;
+  color: #B0A695;
+  font-size: 25px;
+  margin: 30px 20px 30px 20px;
+  text-decoration: none; }
+  .main2 a:hover {
+    color: #776B5D; }
+
+.main2 section h3 {
+  font-family: "La Belle Aurore" , cursive;
+  color: #776B5D;
+  font-size: 40px;
+  margin: 30px 20px 30px 20px; }
+
+.main2 section div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 20px; }
+  .main2 section div article {
+    font-family: "Josefin Slab",serif;
+    color: #B0A695;
+    font-size: 16px;
+    margin: 10px 20px 20px 20px; }
+
+/*Main inspiración*/
+.main3 section {
+  font-family: "La Belle Aurore", cursive;
+  color: #B0A695;
+  font-size: 25px;
+  margin: 30px 20px 30px 20px; }
+
+.main3 h1, .main3 .main4 h2, .main4 .main3 h2, .main3 .main5 h2, .main5 .main3 h2 {
+  font-family: "La Belle Aurore", cursive;
+  color: #776B5D;
+  font-size: 40px;
+  margin: 30px 20px 30px 20px; }
+
+.main3 .grid3 {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  bottom: 20px; }
+
+.main3 p {
+  margin-top: 20px; }
+
+/*Main cuidados*/
+.main4 {
+  font-family: "La Belle Aurore" , cursive;
+  color: #B0A695;
+  font-size: 25px;
+  margin: 30px 20px 30px 20px; }
+  .main4 h1, .main4 h2 {
+    font-family: "La Belle Aurore" , cursive;
+    color: #776B5D;
+    font-size: 40px;
+    margin: 30px 20px 30px 20px; }
+  .main4 div article p {
+    font-family: "Josefin Slab" , serif;
+    color: #B0A695;
+    font-size: 16px;
+    margin: 10px 20px 20px 20px; }
+
+/*Main ¿por qué comprar joyería?*/
+.main5 {
+  font-family: "La Belle Aurore" , cursive;
+  color: #B0A695;
+  font-size: 25px;
+  margin: 30px 20px 30px 20px; }
+  .main5 h1, .main5 h2 {
+    font-family: "La Belle Aurore" , cursive;
+    color: #776B5D;
+    font-size: 40px;
+    margin: 30px 20px 30px 20px; }
+  .main5 .grid3 {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    bottom: 20px; }
+  .main5 h2 {
+    top: 30px; }

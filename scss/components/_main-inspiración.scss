@@ -1,0 +1,20 @@
+.main3{
+    section{
+        font-family:"La Belle Aurore", cursive;
+        color: map-get($FuenteClara , color );
+        font-size: map-get($FuenteClara , font-size );
+        margin: map-get($FuenteClara , margin );
+    }
+    h1{
+        font-family: "La Belle Aurore", cursive;
+        color: map-get($Fuente2Oscura, color );
+        font-size: map-get($Fuente2Oscura, font-size );
+        margin: map-get($Fuente2Oscura, margin );
+    }
+    .grid3 {
+            @include grid3 (50%, 2, 3, 20px);
+    }
+    p{
+        margin-top: 20px;
+    }
+}

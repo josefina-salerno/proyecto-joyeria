@@ -1,0 +1,35 @@
+.main2{
+    h1{
+        font-family: "La Belle Aurore" , cursive;
+        color: map-get($Fuente2Oscura, color );
+        font-size: map-get($Fuente2Oscura, font-size );
+        margin: map-get($Fuente2Oscura , margin );
+    }
+    a {
+        font-family: "La Belle Aurore" , cursive;
+        color: map-get($FuenteClara, color );
+        font-size: map-get($FuenteClara, font-size );
+        margin: map-get($FuenteClara, margin);
+        text-decoration: none;
+        &:hover {
+            color: #776B5D;
+        }
+    }
+    section {
+        h3{
+            font-family: "La Belle Aurore" , cursive;
+            color: map-get($Fuente2Oscura, color );
+            font-size: map-get($Fuente2Oscura, font-size );
+            margin: map-get($Fuente2Oscura , margin );
+        }
+        div{
+            @include grid2 (3, 2, 20px);
+            article{
+                font-family: "Josefin Slab",serif;
+                color: map-get($FuentePrecios, color );
+                font-size: map-get($FuentePrecios, font-size );
+                margin: map-get($FuentePrecios, margin );
+            }
+        }
+    }
+}

@@ -38,13 +38,20 @@
 }
 @mixin grid ($columns, $rows, $gap){
     display: grid;
-    grid-template-columns: $columns;
-    grid-template-rows: $rows;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 2fr);
     gap: $gap;
 }
-@mixin grid2 ($widht, $columns, $rows){
+@mixin grid2 ($columns, $row, $margin){
     display: grid;
-    width: $widht;
-    grid-template-columns: $columns;
-    grid-template-rows: $rows;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($row, 1fr);
+    margin-left: $margin;
+}
+@mixin grid3 ($width, $columns, $rows, $bottom){
+    display: grid;
+    width: $width;
+    grid-template-columns: repeat($columns,1fr);
+    grid-template-rows: repeat($rows,1fr);
+    bottom: $bottom;
 }
