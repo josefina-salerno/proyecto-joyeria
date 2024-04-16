@@ -208,3 +208,15 @@ header nav {
     bottom: 20px; }
   .main5 h2 {
     top: 30px; }
+
+/*Footer*/
+footer section {
+  font-family: "Josefin Sans", sans-serif;
+  color: #D9D9D9;
+  background-color: #B0A695;
+  text-align: center; }
+  footer section .flex-footer {
+    display: flex;
+    justify-content: space-around; }
+    footer section .flex-footer p {
+      margin-top: 20px; }

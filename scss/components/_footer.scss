@@ -1,0 +1,15 @@
+footer{
+    section{
+    
+    font-family: "Josefin Sans", sans-serif;
+    color: map-get($FuentePP, color );
+    background-color: map-get($FuentePP, background-color );
+    text-align: map-get($FuentePP, text-align );
+    .flex-footer {
+        @include flex-footer(space-around);
+        p{
+            margin-top: 20px;
+        }
+    }
+    }
+}
