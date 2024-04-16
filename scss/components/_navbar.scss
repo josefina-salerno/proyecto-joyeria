@@ -1,0 +1,30 @@
+header {
+    .navbar {
+        background-color: transparent !important; /* Hacer el fondo transparente */
+        div .container-fluid ul .nav-item{  
+                display: flex;
+                justify-content: space-around;
+                font-family: "Josefin Sans", sans-serif;
+                font-size: 12px;
+                margin-top: 15px;
+                .navbar-nav .nav-link {
+                    color: #fff; /* Cambiar el color de las letras a blanco */
+            }
+        }
+    }
+    nav {
+        font-size: 12px;
+        a{
+            text-decoration: none;
+            @include flex-nav(row, nowrap, 20px, 20px);
+            &:hover {
+                color: white;
+            }
+        }
+        .logo {
+            @include flex-logo (fixed);
+            width: 45px;
+            height: 45px;
+        }
+    }
+    }

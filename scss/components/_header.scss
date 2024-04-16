@@ -1,0 +1,44 @@
+.header { 
+    background-image: url(../assets/img/fondo.png);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    h1{
+        color: map-get($FuenteP1 , color);
+        font-size: map-get($FuenteP1 , font-size);
+        position: map-get($FuenteP1 , position);
+        margin: map-get($FuenteP1 , margin);
+        font-family: "Josefin Sans" , sans-serif;
+}  
+    a{
+        color: #776b5d;
+}
+}
+.header2 {
+    background-image: url(../assets/img/fondo2.png);
+    @extend .header;
+    a {
+        color: #d9d9d9;
+    }
+    h1{
+        color: #d9d9d9;
+    }
+}
+.header3 {
+    background-image: url(../assets/img/fondo3.png);
+    @extend .header;
+    a{
+        color: #d9d9d9;
+    }
+    h1{
+        color: #d9d9d9;
+    }
+}
+.header4{
+    background-image: url(../assets/img/fondo4.png);
+    @extend .header;
+}
+.header5{
+    background-image: url(../assets/img/fondo5.png);
+    @extend .header;
+}

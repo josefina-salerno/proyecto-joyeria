@@ -1,0 +1,50 @@
+@mixin flex-nav ($direction, $wrap, $margin, $top){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    margin-right: $margin;
+    top: $top;
+
+}
+@mixin flex-img($direction, $wrap, $justify, $margin){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    margin: $margin;
+}
+@mixin flex-footer($justify){
+    display: flex;
+    justify-content: $justify;
+}
+@mixin flex-ImgText($align, $text, $justify){
+    display: flex;
+    align-self: $align;
+    text-align: $text;
+    justify-content: $justify;
+}
+@mixin flex-texto($direction, $margin){
+    display: flex;
+    flex-direction: $direction;
+    margin-top: $margin;
+}
+@mixin flex-div($direction, $gap){
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+@mixin flex-logo ($position){
+    position: $position;
+}
+@mixin grid ($columns, $rows, $gap){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+@mixin grid2 ($widht, $columns, $rows){
+    display: grid;
+    width: $widht;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}

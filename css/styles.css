@@ -1,2 +1,96 @@
-header {
-  background-color: aqua; }
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+header .navbar {
+  background-color: transparent !important;
+  /* Hacer el fondo transparente */ }
+  header .navbar div .container-fluid ul .nav-item {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    margin-top: 15px; }
+    header .navbar div .container-fluid ul .nav-item .navbar-nav .nav-link {
+      color: #fff;
+      /* Cambiar el color de las letras a blanco */ }
+
+header nav {
+  font-size: 12px; }
+  header nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    top: 20px; }
+    header nav a:hover {
+      color: white; }
+  header nav .logo {
+    position: fixed;
+    width: 45px;
+    height: 45px; }
+
+.header, .header2, .header3, .header4, .header5 {
+  background-image: url(../assets/img/fondo.png);
+  background-size: cover;
+  height: 700px;
+  width: 100%; }
+  .header h1, .header2 h1, .header3 h1, .header4 h1, .header5 h1 {
+    color: #776B5D;
+    font-size: 35px;
+    position: absolute;
+    margin: 153px 10px 10px 239px;
+    font-family: "Josefin Sans" , sans-serif; }
+  .header a, .header2 a, .header3 a, .header4 a, .header5 a {
+    color: #776b5d; }
+
+.header2 {
+  background-image: url(../assets/img/fondo2.png); }
+  .header2 a {
+    color: #d9d9d9; }
+  .header2 h1 {
+    color: #d9d9d9; }
+
+.header3 {
+  background-image: url(../assets/img/fondo3.png); }
+  .header3 a {
+    color: #d9d9d9; }
+  .header3 h1 {
+    color: #d9d9d9; }
+
+.header4 {
+  background-image: url(../assets/img/fondo4.png); }
+
+.header5 {
+  background-image: url(../assets/img/fondo5.png); }
+
+main section {
+  font-family: "La Belle Aurore", cursive;
+  color: #B0A695;
+  font-size: 20px;
+  margin: 30px 20px 30px 20px; }
+  main section h2 {
+    font-family: "La belle Aurore", cursive;
+    color: #776B5D;
+    font-size: 35px;
+    margin: 30px 20px 30px 20px; }
+  main section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 30px 20px 20px; }
+    main section div div {
+      display: flex;
+      flex-direction: column;
+      margin-top: 35px; }
+
+main section .div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20; }
