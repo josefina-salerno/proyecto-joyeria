@@ -31,13 +31,16 @@
                 margin: map-get($FuentePrecios, margin );
             }
         }
-        article{    
+        article{ 
+            div{
+            overflow: hidden;
             img{
                 &:hover{
                     transform: scale(1.1);
                     transition: transform 1s ease;
                 }
-            }
+            } 
+        }
         }
     }
 }
