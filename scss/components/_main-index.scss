@@ -4,6 +4,7 @@
         color: map-get($FuenteClara , color );
         font-size: map-get($FuenteClara , font-size );
         margin: map-get($FuenteClara , margin );
+        padding: 10px;
         h2 {
             text-align: left;
             font-family: "La belle Aurore", cursive;
@@ -24,8 +25,8 @@
     .div2 {
         @include grid (1, 1, 0px, wrap);
             img {
-                width: 450px;
-                height: 600px;
+                width: 350px;
+                height: 500px;
                 margin-bottom: 20px;
                 }
             }
