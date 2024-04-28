@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*Mixin*/
-/*Maps*/
 /*FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap");
@@ -150,7 +148,8 @@ header, .header2, .header3, .header4, .header5 {
 
 /*Main productos*/
 .main2 {
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   padding: 10px; }
   .main2 h1, .main2 .main4 h2, .main4 .main2 h2, .main2 .main5 h2, .main5 .main2 h2 {
     font-family: "La Belle Aurore" , cursive;
@@ -169,12 +168,15 @@ header, .header2, .header3, .header4, .header5 {
     font-family: "La Belle Aurore" , cursive;
     color: #776B5D;
     font-size: 40px;
-    margin: 30px 20px 30px 20px; }
+    margin: 30px 20px 30px 20px;
+    height: 30px;
+    width: 700px; }
   .main2 section div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 0px 20px 10px 20px; }
+    margin: 0px 20px 10px 20px;
+    width: 100%; }
     .main2 section div article {
       font-family: "Josefin Slab",serif;
       color: #B0A695;
@@ -277,6 +279,14 @@ footer section {
     justify-content: space-around;
     margin: 20px 30px 20px 20px; } }
 
+/*MQ 1024*/
+@media (max-width: 1024px) {
+  .main2 section div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0px 20px 10px 20px; } }
+
 /*MQ 768px*/
 @media (max-width: 768px) {
   header nav .logo, .header2 nav .logo, .header3 nav .logo, .header4 nav .logo, .header5 nav .logo {
@@ -304,6 +314,8 @@ footer section {
     flex-direction: column; }
     .main1 .div2 div {
       margin-left: 3px; }
+  .main2 section div {
+    width: 100%; }
   .main3 .grid3 img {
     width: 350px; }
   .main4 section .row {

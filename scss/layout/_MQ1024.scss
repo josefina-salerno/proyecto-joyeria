@@ -1,0 +1,10 @@
+@media (max-width:1024px){
+    .main2{
+        section{
+            div{
+                @include grid2 (2, 2, 0px 20px 10px 20px);
+            }
+            
+        }
+    }
+}

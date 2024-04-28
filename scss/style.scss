@@ -1,6 +1,6 @@
-/*Mixin*/
+//Mixin
 @import "./utilities/mixins";
-/*Maps*/
+//Maps
 @import "./utilities/maps";
 /*FUENTES*/
 @import "./base/fuentes";
@@ -24,6 +24,8 @@
 @import "./components/footer";
 /*MQ 1440px*/
 @import "./layout/MQ1440";
+/*MQ 1024*/
+@import "./layout/MQ1024";
 /*MQ 768px*/
 @import "./layout/MQ768";
 /*MQ 425px*/

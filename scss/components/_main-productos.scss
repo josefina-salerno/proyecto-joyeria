@@ -1,5 +1,6 @@
 .main2{
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     h1{
         font-family: "La Belle Aurore" , cursive;
@@ -23,9 +24,12 @@
             color: map-get($Fuente2Oscura, color );
             font-size: map-get($Fuente2Oscura, font-size );
             margin: map-get($Fuente2Oscura , margin );
+            height: 30px;
+            width: 700px;
         }
         div{
             @include grid2 (3, 2, 0px 20px 10px 20px);
+            width: 100%;
             article{
                 font-family: "Josefin Slab",serif;
                 color: map-get($FuentePrecios, color );
